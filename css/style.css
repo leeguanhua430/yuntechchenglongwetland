@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.BGbox {
+    width: 100vw; 
+    height: 56.25vw; /* height:width ratio = 9/16 = .5625  */
+    background: url(../img/BG.png);
+    background-size: contain;
+    max-height: 100vh;
+    max-width: 177.78vh; /* 16/9 = 1.778 */
+    margin: auto;
+    position: absolute;
+    top:0;bottom:0; /* vertical center */
+    left:0;right:0; /* horizontal center */
+}
+
+.buttonbox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 10.5% 5.5%;
+}
+
+.buttonbox a{
+    height: 10.5%;
+    margin-left: 0.5%;
+    display: flex;
+    align-items: center;
+}
+
+.buttonbox a img{
+    height: 100%;
+}
+
+.buttonbox a img:hover{
+    display: block;
+    filter: drop-shadow(5px 5px 5px #4b6976) ;
+
+}
+
+.modal {
+    display: none;
+    position: relative;
+    z-index: 1;
+    width: calc(100vw - (100vw - 100%));
+    height: 100vh;
+    overflow: auto;    
+    background-color: #fff; /* 背景顏色加透明度 */
+}
+
+
+
+.close{
+    position: absolute;
+    width: 6%;
+    height: 6%;
+    background: url(../img/BackButton.png) no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    margin: 1%;
+}
+
+.modal img{
+    width: 100%;
+}
+

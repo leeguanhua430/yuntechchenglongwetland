@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YunTech</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="BGbox">
+        <div class="buttonbox">
+            <a href="javascript:void(0);" onclick="openModal('img1')">
+                <img src="./img/btn-01.png" alt="">
+            </a>
+            <a href="game/">
+                <img src="./img/btn-02.png" alt="">
+            </a>
+            <a href="javascript:void(0);" onclick="openModal('img2')">
+                <img src="./img/btn-03.png" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div id="img1" class="modal">
+        <div class="close" onclick="closeModal('img1')"></div>
+        <img src="./img/btn01-content.png" alt="">
+    </div>
+    <div id="img2" class="modal">
+        <div class="close" onclick="closeModal('img2')"></div>
+        <img src="./img/btn03-content.png" alt="">
+    </div>
+
+
+    <script src="./js/openModal.js"></script>
+</body>
+
+</html>
